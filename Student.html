@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        .form{
+            width: 800px;
+            height: auto;
+            background-color: rgb(1, 32, 1);
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center; */
+             text-align: center;
+        }
+        .form h1{
+            background-color: bisque;
+            width: 100%;
+            text-align: center;
+        }
+        .form ul li{
+            padding: 10px;
+            color: lightyellow;
+            list-style-type: none;
+            font-size: 25px;
+        } 
+        .sub{
+           font-size: 50px;
+           text-align: center;
+           width: 100px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Enter Student Detail</h1>
+    <form method="post" action="Student">
+        <ul class="ul">
+       <li> Enter the Student id:<input type="text" name="id"  minlength="3"><br></li>
+       <li> Enter the Student Name :<input type="text" name="name" ><br></li>
+       <li> Enter the Student age:<input type="text" name="age"><br></li>
+       <li> Gender          Male<input type="radio"  value="male" name="gender"checked>          Female<input type="radio"
+            value="Female" name="gender" checked><br></li>
+       <li> Enter the marks in Chemistry<input type="text" maxlength="2" name="chemistry"><br></li>
+       <li> Enter the marks in Maths<input type="text" maxlength="2" name="math"><br></li>
+       <li> Enter the marks in Physics<input type="text" maxlength="2" name="physics"><br></li>
+        <li>Enter the marks in Computer<input type="text" maxlength="2" name="computer"><br></li>
+        <li>Enter the marks in English<input type="text" maxlength="2" name="english"><br></li>
+       <li class="sub"> <input type="submit"></li>
+        </ul>
+    </form></div>
+    <h1><a href="index.html">Back Home Page</a></h1>
+</body>
+
+</html>
